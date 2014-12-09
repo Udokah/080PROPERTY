@@ -1,0 +1,90 @@
+
+/* PROPERTIES STYLING */
+
+.sec-nav{
+	float:left;
+	display:inline-block;
+	margin-right:20px;
+	padding:5px;
+}
+
+.sec-nav li a{
+	display:block;
+	padding:5px 10px;
+	border:1px solid #ddd;
+	margin-bottom:10px;
+	color:#333;
+	background-color:#ccc;
+	font-size:17px;
+}
+
+.sec-nav li a:hover{
+	background-color:#ddd;
+}
+
+.sec-nav li .active , .sec-nav li .active:hover{
+	background-color:#eee;
+}
+
+.security{
+	position:relative;
+	float:left;
+	margin-left:10px;
+	width:700px;
+	margin-bottom:20px;
+	min-height:400px;
+}
+
+.security > section{
+	position:absolute;
+}
+
+.security section{
+	width:700px;
+}
+
+.security section, .security section form{
+	display:block;
+}
+
+.security section table{
+	width:60%;
+	border:0px solid #ddd;
+}
+
+.security section table tr td{
+	padding:6px;
+}
+
+.security section table tr td:first-child{
+	font-weight:bold;
+}
+
+.security input[type=text], .security input[type=password]{
+	width:200px;
+	font-size:16px;
+	padding:8px 5px;
+}
+
+.security input[type=submit]{
+	padding:8px 16px;
+	border:1px solid #ddd;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	background-color:#111;
+	color:#fff;
+}
+
+.security input[type=submit]:hover{
+	background-color:#333;
+}
+
+.security input[type=submit]:active{
+	background-color:#fff;
+	color:#333;
+	border:1px solid #333;
+}
+
+#changeusername, #changepassword{
+	display:none;
+}

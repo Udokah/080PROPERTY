@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /080PROPERTY/
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^dashboard/?$ index.php [NC,L]
+	RewriteRule ^manage-users/?$ users.php [NC,L]
+              RewriteRule ^manage-properties/?$ property.php [NC,L]
+              RewriteRule ^add-new-property/?$ add_property.php [NC,L]
+              RewriteRule ^settings/?$ settings.php [NC,L]
+              RewriteRule ^profile/?$ profile.php [NC,L]
+              RewriteRule ^login/?$ login.php [NC,L]
+              RewriteRule ^view-property/?$ view_property.php [NC,L]
+</IfModule>
